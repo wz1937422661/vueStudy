@@ -1,26 +1,33 @@
 <template>
   <div class>
-    子元素1111
-    <div>侧边栏</div>
-    <router-link :to="{name:'Children_second'}">路由嵌套</router-link>
+    <div>我是子元素</div>
+    <span>{{age}}</span>
+    <button @click="edit">子组件按钮</button>
   </div>
 </template>
 
 <script>
+
+// 子组件向父组件传值
+
+// 
+
 export default {
+
   name: "",
   data() {
-    return {};
+    return {
+      age:'33'
+    };
   },
+  props:['title'],
   components: {},
-  methods: {},
-  watch: {
-    '$route'(to, from) {
-      console.log(to);
-      console.log('---------');
-      console.log(from);
+  methods: {
+    edit(){
+      this.$emit('listenChildren','我是子组件的数据');
     }
-  }
+  },
+ 
 };
 </script>
 
