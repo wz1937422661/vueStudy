@@ -3,6 +3,7 @@
   <div class="home">
     <!-- <router-link :to="url">去父组件</router-link> -->
     <button @click="btn">按钮</button>
+    <div>分支提交的测试</div>
   </div>
 </template>
 

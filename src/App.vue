@@ -4,8 +4,6 @@
     <router-view></router-view>
     <router-view name="a">
       <!-- 侧边栏 -->
-     
-
     </router-view>
 
     <!-- 路由命名视图 -->
