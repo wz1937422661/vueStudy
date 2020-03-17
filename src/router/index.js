@@ -45,6 +45,11 @@ const routes = [
     name:'vueLIfeCycle',
     component:resolve=>require(['@/views/vueLifeCycle'],resolve),
   },
+  {
+    path:'/vueSlot',
+    name:'vueSlot',
+    component:resolve=>require(['@/views/vueSlot'],resolve),
+  },
 
 
 ];
