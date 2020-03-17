@@ -2,27 +2,23 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 //引入外部组件的方法;
-import Home from "@/views/Home";
-import ChildrenFirst from "@/views/components_by_value/Children_first";
+const Home=()=>import("@/views/Home");
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    // name: "Home",
-    components:{
-      default:Home,
-      a:ChildrenFirst,
-      
-    }
+    name: "Home",
+    component:Home
   },
   {
     path: "/Father",
     name: "Father",
     // 使用懒加载优化项目
-    component: resolve =>
-    require(["@/views/components_by_value/Father"], resolve),
+
+    // function fn(){}
+    component: resolve =>require(["@/views/components_by_value/Father"], resolve),
     children: [
       {
         path: "Children_second",
