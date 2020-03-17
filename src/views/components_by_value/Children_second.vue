@@ -4,7 +4,12 @@
     </div>
 </template>
 
+
 <script>
+// 兄弟组件传值
+import eventBus from './eventBus'
+
+
 export default {
     name: "",
     data() {
@@ -13,13 +18,14 @@ export default {
         }
     },
     components: {
-
     },
     methods: {
 
     },
     created(){
-        // console.log(this.route.params.id);
+        eventBus.$on('add',function(res,str){
+            console.log(res,str);
+        })
     }
 }
 </script>
