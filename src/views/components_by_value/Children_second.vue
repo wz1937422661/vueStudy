@@ -4,7 +4,6 @@
     </div>
 </template>
 
-
 <script>
 // 兄弟组件传值
 import eventBus from './eventBus'
@@ -23,6 +22,7 @@ export default {
 
     },
     created(){
+        // 兄弟组件传值 触发自定义事件
         eventBus.$on('add',function(res,str){
             console.log(res,str);
         })

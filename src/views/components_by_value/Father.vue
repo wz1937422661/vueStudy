@@ -3,7 +3,6 @@
     {{name}}
     <childrenFirst @listenChildren="childrenData" :title="title"></childrenFirst>
     <childrenSecond></childrenSecond>
-    <bar></bar>
   </div>
 </template>
 
@@ -29,7 +28,7 @@ export default {
   },
   methods: {
     btn() {
-      console.log(this.title);
+      // console.log(this.title);
     },
     childrenData(res) {
       console.log(res);

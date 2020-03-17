@@ -40,6 +40,13 @@ const routes = [
     name:'Children_second',
     component:resolve=>require(['@/views/components_by_value/Children_second'],resolve),
   },
+  {
+    path:'/vueLIfeCycle',
+    name:'vueLIfeCycle',
+    component:resolve=>require(['@/views/vueLifeCycle'],resolve),
+  },
+
+
 ];
 
 const router = new VueRouter({

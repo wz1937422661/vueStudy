@@ -1,7 +1,8 @@
 
 <template>
   <div class="home">
-    <button @click="btn">按钮</button>
+    <button @click="btn">组件传值</button> <br>
+    <button @click="lifeBtn">生命周期</button>
   </div>
 </template>
 
@@ -18,9 +19,13 @@ export default {
   components: {
   },
   methods:{
+    // 组件传值
     btn(){
       this.$router.push({name:'Father',params:{id:'110'}});
-      
+    },
+    // vue生命周期
+    lifeBtn(){
+      this.$router.push('/vueLIfeCycle');
     }
   },
   
