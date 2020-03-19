@@ -55,6 +55,11 @@ const routes = [
     name:'vuexUse',
     component:resolve=>require(['@/views/vuexUse'],resolve),
   },
+  {
+    path:'/objectStudy',
+    name:'objectStudy',
+    component:resolve=>require(['@/views/nativejs/objectStudy'],resolve),
+  },
 
 
 ];

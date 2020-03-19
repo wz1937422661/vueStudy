@@ -37,7 +37,8 @@
       <!-- 作用域插槽 -->
     </vueSlot>
     <router-link to="vuexUse">vuex的使用</router-link>
-      
+    <br>
+    <router-link to="objectStudy">面向对象的使用</router-link>
 
   </div>
 </template>

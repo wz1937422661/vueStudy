@@ -31,15 +31,15 @@ export default {
 
      },
     created(){
-        console.log(this.user);
+        // console.log(this.user);
         
     }
 }
 
 // js面向对象
 
-    let obj={age:10};
-    console.log(obj);
+    // let obj={age:10};
+    // console.log(obj);
 //
     
 
