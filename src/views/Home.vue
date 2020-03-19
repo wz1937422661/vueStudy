@@ -36,6 +36,9 @@
 
       <!-- 作用域插槽 -->
     </vueSlot>
+    <router-link to="vuexUse">vuex的使用</router-link>
+      
+
   </div>
 </template>
 

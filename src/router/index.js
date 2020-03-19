@@ -50,6 +50,11 @@ const routes = [
     name:'vueSlot',
     component:resolve=>require(['@/views/vueSlot'],resolve),
   },
+  {
+    path:'/vuexUse',
+    name:'vuexUse',
+    component:resolve=>require(['@/views/vuexUse'],resolve),
+  },
 
 
 ];
